@@ -81,4 +81,31 @@ public class Kotak {
             lifeentitas.remove(i);
         World[_absis][_ordinat] = "Zonk";
     }
+    public void setElement(String _currentElement){
+		currentElement = _currentElement;
+	}
+	public void addElement(String _currentElement){
+        elementTersedia.addElement(_currentElement);
+    }
+    public void removeElement(String _El){
+		String El;
+		int i;
+        for (i = 0; i < elementTersedia.size(); i++){
+            El = elementTersedia.get(i);
+            if (El.compareTo(_El) == 0)
+                break;
+        }
+        if (i != elementTersedia.size())
+			elementTersedia.removeElementAt(i);
+	}
+	public void setWorldString[][] _World){
+        for (int i = 0; i <= 151; i++){
+            for (int j = 0; j <= 101; j++){
+				World[i][j] = _World[i][j];
+            }
+        }
+    }
+    public String[][] getWorld(){
+		return World;
+	}
 }
