@@ -18,7 +18,7 @@ public class Kotak {
     public Vector<String> history;
     public Vector<Element> lifeentitas;
     
-    public void insert(double posisiX,double posisiY,Element){}
-    public void gantiSuhu(int){}
-    public void delete(posisiX, posisiY){}
+    public void insert(int _absis,int _ordinat,Element E){}
+    public void gantiSuhu(int _suhu){}
+    public void delete(int _absis,int _ordinat){}
 }
