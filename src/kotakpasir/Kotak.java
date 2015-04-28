@@ -108,7 +108,7 @@ public class Kotak {
 			}
 		}
 	}
-	public void setWorldString[][] _World){
+	public void setWorld(String[][] _World){
         for (int i = 0; i <= 151; i++){
             for (int j = 0; j <= 101; j++){
 				World[i][j] = _World[i][j];
@@ -120,5 +120,8 @@ public class Kotak {
 	}
 	public void addHistory(String _history){
 		history.addElement(_history);
+	}
+	public Vector<String> getHistory(){
+		return history;
 	}
 }
