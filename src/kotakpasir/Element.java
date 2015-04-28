@@ -1,3 +1,5 @@
+package kotakpasir;
+
 import java.util.Vector;
 
 abstract class Element{

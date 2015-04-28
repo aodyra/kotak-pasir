@@ -1,3 +1,5 @@
+package kotakpasir;
+
 import java.util.Random;
 import java.util.Vector;
 

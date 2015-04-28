@@ -1,3 +1,4 @@
+import kotakpasir.Element;
 import java.util.Vector;
 
 class Coba{
