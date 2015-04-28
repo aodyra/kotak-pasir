@@ -1,11 +1,13 @@
 package kotakpasir;
 
+import java.awt.Color;
 import java.util.Random;
 import java.util.Vector;
 
 class Tanah extends Element{
 	private static final double densitas = 1.0;
 	private static final String nama = "Tanah";
+        private static final Color warna = new Color(218,182,97);
 	public Tanah(int _absis, int _ordinat, int _temperatur){
 		setAbsis(_absis);
 		setOrdinat(_ordinat);

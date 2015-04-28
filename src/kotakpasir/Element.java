@@ -1,6 +1,7 @@
 package kotakpasir;
 
 import java.util.Vector;
+import java.awt.Color;
 
 abstract class Element{
 	private int absis;
@@ -8,6 +9,7 @@ abstract class Element{
 	private int temperatur;
 	private static double densitas;
 	private static String nama;
+        private static Color warna;
 	public int getAbsis(){
 		return absis;
 	}
@@ -71,4 +73,7 @@ abstract class Element{
 	public boolean isSameElement(Element OtherElement){
 		return nama == OtherElement.getNama();
 	}
+        public Color getWarna(){
+            return warna;
+        }
 }

@@ -85,9 +85,9 @@ public class Kotak {
     }
     public void setElement(String _currentElement){
 		currentElement = _currentElement;
-	}
-	public void addElement(String _El){
-        elementTersedia.addElement(_currentElement);
+    }
+    public void addElement(String _El){
+        elementTersedia.addElement(_El);
         history.addElement("Menambah element "+_El);
     }
     public void removeElement(String _El){
@@ -101,14 +101,15 @@ public class Kotak {
         if (i != elementTersedia.size())
 			elementTersedia.remove(i);
         history.addElement("Menghapus element "+_El);
+        Element El1 = new Tanah(0,0,suhu);
         for (i = 0; i < lifeelement.size(); i++){
-            El = elementTersedia.get(i);
-            if (El.compareTo(_El) == 0){
-				delete(El.getAbsis(),El.getOrdinat());
+            El1 = lifeelement.get(i);
+            if (El1.getNama().compareTo(_El) == 0){
+				delete(El1.getAbsis(),El1.getOrdinat());
 			}
 		}
 	}
-	public void setWorld(String[][] _World){
+    public void setWorld(String[][] _World){
         for (int i = 0; i <= 151; i++){
             for (int j = 0; j <= 101; j++){
 				World[i][j] = _World[i][j];

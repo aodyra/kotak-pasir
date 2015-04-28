@@ -1,11 +1,13 @@
 package kotakpasir;
 
+import java.awt.Color;
 import java.util.Random;
 import java.util.Vector;
 
 class Air extends Element{
 	private static final double densitas = 1.0;
 	private static final String nama = "Air";
+        private static final Color warna = new Color(73,145,203);
 	public Air(int _absis, int _ordinat, int _temperatur){
 		setAbsis(_absis);
 		setOrdinat(_ordinat);
