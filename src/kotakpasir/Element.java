@@ -1,6 +1,9 @@
+import java.util.Vector;
+
 abstract class Element{
 	private int absis;
 	private int ordinat;
+	private int temperatur;
 	private static double densitas;
 	private static String nama;
 	public int getAbsis(){
@@ -9,11 +12,23 @@ abstract class Element{
 	public int getOrdinat(){
 		return ordinat;
 	}
+	public int getTemperatur(){
+		return temperatur;
+	}
 	public void setAbsis(int _absis){
 		absis = _absis;
 	}
 	public void setOrdinat(int _ordinat){
 		ordinat = _ordinat;
+	}
+	public void setTemperatur(int _temperatur){
+		temperatur = _temperatur;
+	}
+	public void mendingin(){
+		temperatur--;
+	}
+	public void memanas(){
+		temperatur++;
 	}
 	public double getDensitas(){
 		return densitas;	
@@ -49,7 +64,7 @@ abstract class Element{
 		moveDown();
 		moveLeft();
 	}
-	abstract void life(String[][] a);
+	abstract void life(String[][] a, Vector<Element> DE, int EnvTemp);
 	abstract void meetOtherElement(Element OtherElement);
 	public boolean isSameElement(Element OtherElement){
 		return nama == OtherElement.getNama();

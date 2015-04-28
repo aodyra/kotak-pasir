@@ -1,13 +1,18 @@
 import java.util.Random;
+import java.util.Vector;
 
 class Tanah extends Element{
 	private static final double densitas = 1.0;
 	private static final String nama = "Tanah";
-	public Tanah(int _absis, int _ordinat){
+	public Tanah(int _absis, int _ordinat, int _temperatur){
 		setAbsis(_absis);
 		setOrdinat(_ordinat);
+		setTemperatur(_temperatur);
 	}
-	public void life(String[][] a){
+	public String getNama(){
+		return nama;
+	}
+	public void life(String[][] a, Vector<Element> DE, int EnvTemp){
 		if (a[getAbsis()][getOrdinat() + 1].compareTo("Zonk") == 0){
 			a[getAbsis()][getOrdinat()] = "Zonk";
 			moveDown();
@@ -24,6 +29,12 @@ class Tanah extends Element{
 				moveDownRight();
 				a[getAbsis()][getOrdinat()] = "Tanah";
 			}
+		}
+		if (EnvTemp < getTemperatur()){
+			mendingin();
+		}
+		if (EnvTemp > getTemperatur()){
+			memanas();
 		}
 	}
 	public void meetOtherElement(Element OtherElement){}
