@@ -59,8 +59,6 @@ public class Frame extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         Play = new javax.swing.JButton();
         Play.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/play.png")));
-        Pause = new javax.swing.JButton();
-        Pause.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/pause.png")));
         NewGame = new javax.swing.JButton();
         Load = new javax.swing.JButton();
         Save = new javax.swing.JButton();
@@ -86,7 +84,6 @@ public class Frame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(Play, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Pause, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25)
                 .addComponent(NewGame, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -113,7 +110,6 @@ public class Frame extends javax.swing.JFrame {
                     .addComponent(Delete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Insert, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Load, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Pause, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(NewGame, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Play, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -175,7 +171,6 @@ public class Frame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton Play;
-    private javax.swing.JButton Pause;
     private javax.swing.JButton NewGame;
     private javax.swing.JButton Load;
     private javax.swing.JButton Save;
