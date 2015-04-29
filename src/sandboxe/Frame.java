@@ -61,12 +61,16 @@ public class Frame extends javax.swing.JFrame {
         Play.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/play.png")));
         NewGame = new javax.swing.JButton();
         Load = new javax.swing.JButton();
+        Load.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/openfile.png")));
         Save = new javax.swing.JButton();
+        Save.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/save.png")));
         Insert = new javax.swing.JButton();
         Delete = new javax.swing.JButton();
         Setting = new javax.swing.JButton();
+        Setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/setting.png")));
         About = new javax.swing.JButton();
-
+        About.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/about.png")));
+        
         
         setTitle("Sand Box Game");
         setSize(new Dimension(1020,820));
